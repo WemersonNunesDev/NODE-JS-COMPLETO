@@ -10,8 +10,18 @@ const products = [];
 
 // /admin/add-product => GET
 router.get('/add-product', (req, res, next) => {
-  res.render('add-products', {pageTitle: 'Add Product', path: '/admin/add-product'});
+  res.render('add-products', {
+    pageTitle: 'Add Product', 
+    path: '/admin/add-product',
+    /* 
+    formsCSS: true,
+    productCSS: true,
+    activeAddProduct: true
+    */
+  });
 });
+
+
 
 // /admin/add-product => POST
 router.post('/add-product', (req, res, next) => {
