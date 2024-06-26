@@ -106,3 +106,13 @@ main {
     background-color: #00695c;
     color: white;
 }
+
+@media (min-width: 768px) {
+    .main-header__nav {
+        display: flex;
+    }
+
+    #side-menu-toggle {
+        display: none;
+    }
+}
